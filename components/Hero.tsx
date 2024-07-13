@@ -56,7 +56,7 @@ const Hero: FC<HeroProps> = ({}) => {
             <Badge
               icon={<RiTeamFill />}
               endCounterNum={9}
-              badgeText='Happy clients'
+              badgeText='Happy Clients'
               className='absolute top-[55%] -right-8'
               endCounterText='k'
             /> 

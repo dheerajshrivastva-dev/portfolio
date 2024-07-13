@@ -18,6 +18,7 @@ interface NavProps {
   containerStyle?: ClassValue;
   linkStyle?: ClassValue;
   underlineStyle?: ClassValue;
+  onNvaication?: () => void;
 }
 
 interface linkInterface {
@@ -39,7 +40,7 @@ const links: linkInterface[] = [
   }
 ]
 
-const Nav: FC<NavProps> = ({ containerStyle, linkStyle, underlineStyle}) => {
+const Nav: FC<NavProps> = ({ containerStyle, linkStyle, underlineStyle, onNvaication}) => {
   const path = usePathname()
   return (
     <nav className={cn(containerStyle)}>
@@ -47,6 +48,7 @@ const Nav: FC<NavProps> = ({ containerStyle, linkStyle, underlineStyle}) => {
         return <Link
           key={index}
           href={link.path}
+          onClick={() => onNvaication?.()}
           className={cn('capitalize', linkStyle)}
         >
           {link.path === path && (
