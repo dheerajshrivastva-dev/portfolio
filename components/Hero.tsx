@@ -2,9 +2,12 @@ import Link from 'next/link'
 import { FC } from 'react'
 
 // icons
-import { RiArrowDownSLine } from "react-icons/ri"
+import { RiArrowDownSLine, RiBriefcase4Fill, RiTeamFill, RiTodoFill } from "react-icons/ri"
 import { Button } from './ui/button'
 import { Download, Send } from 'lucide-react'
+import Socials from './Socials'
+import DevImg from './DevImg'
+import Badge from './Badge'
 
 interface HeroProps {
   
@@ -29,9 +32,37 @@ const Hero: FC<HeroProps> = ({}) => {
                 <Button variant="secondary" className='gap-x-2'>Download CV <Download size={18}/></Button>
               </Link>
             </div>
+            {/* socials  */}
+            <Socials containerStyles='flex gap-x-6 mx-auto xl:mx-0' iconStyles='text-foreground text-[22px] hover:text-primary transition-all ' />
           </div>
           {/* image  */}
-          <div className='hidden xl:flex relative'>Image</div>
+          <div className='hidden xl:flex relative'>
+            {/* badge 1  */}
+            <Badge
+              icon={<RiBriefcase4Fill />}
+              endCounterNum={2}
+              badgeText='Years Of Expreance'
+              className='absolute top-[24%] -left-[5rem]'
+            />
+            {/* badge 2  */}
+            <Badge
+              icon={<RiTodoFill />}
+              endCounterNum={6}
+              badgeText='Finished Projects'
+              className='absolute top-[80%] -left-[1rem]'
+              endCounterText='k'
+            />
+            {/* badge 3  */}
+            <Badge
+              icon={<RiTeamFill />}
+              endCounterNum={9}
+              badgeText='Happy clients'
+              className='absolute top-[55%] -right-8'
+              endCounterText='k'
+            /> 
+            <div className='bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2'></div>
+            <DevImg containerStyle="bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom" imgSrc={"/hero/developer.png"}/>
+          </div>
         </div>
         {/* icons  */}
         <div className='hidden md:flex absolute left-2/4 bottom-44 animate-bounce'>
