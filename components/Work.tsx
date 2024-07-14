@@ -29,7 +29,7 @@ export interface Project {
   githubLink: string;
 }
 
-const projectsData: Project[] = [
+export const projectsData: Project[] = [
   {
     image: '/work/3.png',
     catogary: 'react js',

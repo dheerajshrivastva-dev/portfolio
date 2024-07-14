@@ -69,7 +69,7 @@ const Reviews: FC<ReviewsProps> = ({}) => {
   return (
     <section className='relative mb-12 xl:mb-32'>
       <div className='container mx-auto'>
-        <h2 className='section-title mb-4'>
+        <h2 className='section-title mb-4 text-center mx-auto'>
           Reviews
         </h2>
         {/* slides */}
