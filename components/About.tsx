@@ -162,23 +162,23 @@ const skillsData: Skills[] = [
     title: "tools",
     data: [
       {
-        icons: [<RiGithubFill key={1} size={54} className='text-primary' />],
+        icons: [<RiGithubFill key={1} size={30} className='text-primary' />],
         text: 'GitHub',
       },
       {
-        icons: [<VscVscode key={1} size={54} className='text-primary' />],
+        icons: [<VscVscode key={1} size={30} className='text-primary' />],
         text: 'VSCode',
       },
       {
-        icons: [<SiJira key={1} size={54} className='text-primary' />],
+        icons: [<SiJira key={1} size={30} className='text-primary' />],
         text: 'Jira',
       },
       {
-        icons: [<CgFigma key={1} size={54} className='text-primary' />],
+        icons: [<CgFigma key={1} size={30} className='text-primary' />],
         text: 'Figma',
       },
       {
-        icons: [<VscTerminalLinux key={1} size={54} className='text-primary' />],
+        icons: [<VscTerminalLinux key={1} size={30} className='text-primary' />],
         text: 'Linux',
       },
     ]

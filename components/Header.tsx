@@ -40,13 +40,13 @@ const Header: FC<HeaderProps> = ({}) => {
           <div className="flex items-center gap-x-6">
             {/* nav  */}
             <Nav
-              containerStyle='hidden md:flex gap-x-8 items-center'
+              containerStyle='hidden xl:flex gap-x-8 items-center'
               linkStyle='relative hover:text-primary transition-all'
               underlineStyle='absolute left-0 top-full h-[2px] bg-primary w-full'
             />
             <ThemeToggler />
             {/* mobile nav  */}
-            <div className='md:hidden'>
+            <div className='xl:hidden'>
               <MobileNav />
             </div>
           </div>
