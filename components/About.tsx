@@ -219,9 +219,9 @@ const About: FC<AboutProps> = ({}) => {
                 {/* personal  */}
                 <TabsContent value={tabsName.personal}>
                   <div className='text-center xl:text-left'>
-                    <h3 className='h3 mb-4 '>Unmatched Service Quality for Over 10 Years</h3>
+                    <h3 className='h3 mb-4 '>Building User-Focused Solutions with 2+ Years of Experience</h3>
                     <p className='subtitle max-w-xl mx-auto xl:mx-0'>
-                      I specialize in crafting intutive website with cutting-edge technology, deliverimg dynamic and engaging user expriances.
+                    I'm passionate about crafting clean, user-friendly code through teamwork and collaboration, always seeking to enhance usability and best practices.
                     </p>
                     {/* icons  */}
                     <div className='grid xl:grid-cols-2 gap-4 mb-12'>

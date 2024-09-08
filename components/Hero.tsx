@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { FC } from 'react'
 
 // icons
-import { RiArrowDownSLine, RiBriefcase4Fill, RiTeamFill, RiTodoFill } from "react-icons/ri"
+import { RiArrowDownSLine, RiBriefcase4Fill, RiMedalFill, RiTodoFill } from "react-icons/ri"
 import { Button } from './ui/button'
 import { Download, Send } from 'lucide-react'
 import Socials from './Socials'
@@ -22,7 +22,7 @@ const Hero: FC<HeroProps> = ({}) => {
           <div className='flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left'>
             <div className='text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]'>Web Developer</div>
             <h1 className='h1 mb-4'>Hello, my name is Dheeraj Shrivastva</h1>
-            <p className='subtitle max-w-[490px] mx-auto xl:mx-0'>Brief description with insights into myself, my vocational journey, and what I engage in professionally</p>
+            <p className='subtitle max-w-[490px] mx-auto xl:mx-0'>I&apos;m a full-stack web developer passionate about creating innovative web and mobile applications. I specialize in technologies like React, Node.js, Express.js, and TypeScript to deliver engaging user experiences and solve complex development challenges. I thrive in collaborative environments, working with teams to bring projects to life.</p>
             {/* buttons  */}
             <div className='flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12'>
               <Link href='/contacts'>
@@ -43,22 +43,23 @@ const Hero: FC<HeroProps> = ({}) => {
               endCounterNum={2}
               badgeText='Years Of Expreance'
               className='absolute top-[24%] -left-[5rem]'
+              endCounterText="+"
             />
             {/* badge 2  */}
             <Badge
               icon={<RiTodoFill />}
-              endCounterNum={6}
+              endCounterNum={15}
               badgeText='Finished Projects'
               className='absolute top-[80%] -left-[1rem]'
-              endCounterText='k'
+              endCounterText='+'
             />
             {/* badge 3  */}
             <Badge
-              icon={<RiTeamFill />}
-              endCounterNum={9}
-              badgeText='Happy Clients'
+              icon={<RiMedalFill />}
+              endCounterNum={15}
+              badgeText='Tech Mastered'
               className='absolute top-[55%] -right-8'
-              endCounterText='k'
+              endCounterText='+'
             /> 
             <div className='bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2'></div>
             <DevImg containerStyle="bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom" imgSrc={"/hero/developer.png"}/>

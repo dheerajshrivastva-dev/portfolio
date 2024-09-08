@@ -23,6 +23,7 @@ interface WorkProps {
 export interface Project {
   image: string;
   catogary: string;
+  catogaries?: string[];
   name: string;
   description: string;
   link: string;
@@ -32,75 +33,93 @@ export interface Project {
 export const projectsData: Project[] = [
   {
     image: '/work/3.png',
-    catogary: 'react js',
-    name: 'Nexa Website',
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatum perferendis",
+    catogary: 'fullstack',
+    catogaries: ['react js' , 'react native' , 'node js' , 'graphql' , 'AWS' , 'zoho' , 'mysql'],
+    name: 'Vehicle Trading Platform',
+    description: "Developed web and mobile apps, optimized performance, and created APIs in a microservices architecture using React, Node.js, and AWS.",
     link: "/",
     githubLink: "/",
   },
   {
     image: '/work/4.png',
-    catogary: 'react js',
-    name: 'Solistic Website',
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatum perferendis",
+    catogary: 'fullstack',
+    catogaries: ['Node.js', 'Express.js' , 'Redis' , 'Python' , 'HTML' , 'CSS' , 'Bootstrap5'],
+    name: 'API Rate Limiting Proxy',
+    description: "Created a TCP proxy with Redis for API rate limiting, including a user interface for managing and monitoring rules.",
     link: "/",
-    githubLink: "/",
+    githubLink: "https://github.com/dheerajshrivastva-dev/proxy-rule-backend",
   },
   {
     image: '/work/2.png',
-    catogary: 'next js',
-    name: 'Lumina Website',
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatum perferendis",
-    link: "/",
-    githubLink: "/",
-  },
-  {
-    image: '/work/1.png',
-    catogary: 'next js',
-    name: 'Evolve Website',
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatum perferendis",
-    link: "/",
-    githubLink: "/",
-  },
-  {
-    image: '/work/3.png',
-    catogary: 'next js',
-    name: 'Ignite Website',
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatum perferendis",
-    link: "/",
-    githubLink: "/",
-  },
-  {
-    image: '/work/4.png',
-    catogary: 'next js',
-    name: 'Envision Website',
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatum perferendis",
+    catogary: 'fullstack',
+    catogaries: ['React.js' , 'React Native' , '.NET' , 'Azure' , 'mssql' , 'Bootstrap4' , 'SCSS', 'twilio'],
+    name: 'Health & Wellness Solution',
+    description: "Enhanced booking system and UI/UX for mobile and web apps, integrated new features, and optimized backend services.",
     link: "/",
     githubLink: "/",
   },
   {
     image: '/work/1.png',
     catogary: 'fullstack',
-    name: 'Serenity Website',
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatum perferendis",
+    catogaries: ['React.js', 'Express.js', 'MySQL', 'Node.js', 'Socket.io', 'JWT', 'Authentication'],
+    name: 'Document Sharing & Chat Portal',
+    description: "Built a secure multi-user platform for document sharing and real-time chat with React, Node.js, and MySQL.",
     link: "/",
-    githubLink: "/",
+    githubLink: "https://github.com/queueno-SKYD/express-be",
   },
   {
     image: '/work/3.png',
-    catogary: 'fullstack',
-    name: 'Nova Website',
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatum perferendis",
+    catogary: 'next js',
+    catogaries: ['React.js', 'Next.js', 'Tailwind css'],
+    name: 'Portfolio',
+    description: "Created my personal website - portfolio",
     link: "/",
-    githubLink: "/",
+    githubLink: "https://github.com/dheerajshrivastva-dev/portfolio",
+  },
+  {
+    image: '/work/4.png',
+    catogary: 'fullstack',
+    catogaries: ['React.js', 'Next.js', 'Tailwind css', 'Redis', 'Upstash'],
+    name: 'Realtime Chat App',
+    description: "Created realtime chat with OAuth and friend request, one to one chat.",
+    link: "https://realtime-chat-next-chi.vercel.app/",
+    githubLink: "https://github.com/dheerajshrivastva-dev/realtime-chat-next",
+  },
+  {
+    image: '/work/1.png',
+    catogary: 'frontend',
+    catogaries: ['React.js', 'Next.js', 'HTML', 'CSS', 'Bootstrap'],
+    name: 'SKYD portal',
+    description: "Frontend for Document Sharing & Chat Portal",
+    link: "/",
+    githubLink: "https://github.com/queueno-SKYD/SKYD-Portal",
+  },
+  {
+    image: '/work/3.png',
+    catogary: 'automation',
+    catogaries: ['automation', 'javascript', 'jest'],
+    name: 'Web crawler',
+    description: "Web crawler automation example, that crawl to a given link and recursevely crawl and generate report",
+    link: "/",
+    githubLink: "https://github.com/dheerajshrivastva-dev/web-crawler-http",
   },
   {
     image: '/work/2.png',
-    catogary: 'fullstack',
-    name: 'Zenith Website',
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatum perferendis",
+    catogary: 'frontend',
+    catogaries: ['React js', 'Javascript', 'Next.js'],
+    name: 'Advanced TicTacToe Game board',
+    description: "Created tic tac toe game with opps concept in javascript with react, using matrix data structure.",
     link: "/",
-    githubLink: "/",
+    githubLink: "https://github.com/dheerajshrivastva-dev/TicTacToeGame",
+  },
+  {
+    image: '/work/2.png',
+    catogary: 'App',
+    catogaries: ['React Native', 'Camera module', 'Android', 'IOS'],
+    name: 'QR code scanner',
+    description: "Created QR code scanner app in react native.",
+    link: "/",
+    githubLink: "https://github.com/dheerajshrivastva-dev/qrcode_app",
   },
 ]
 
@@ -111,9 +130,9 @@ const Work: FC<WorkProps> = ({}) => {
         {/* text  */}
         <div className='max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start'>
           <h2 className='section-title mb-4'>
-            My Services
+            My Projects
           </h2>
-          <p className='subtitle mb-8'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo corporis, vel reprehenderit suscipit aperiam ullam.</p>
+          <p className='subtitle mb-8'>A curated selection of my personal and professional projects.</p>
           <Link href='/projects'><Button>All projects</Button></Link>
         </div>
         {/* slides  */}
